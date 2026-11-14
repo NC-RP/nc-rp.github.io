@@ -3,92 +3,435 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Presented by Corasin Studios, Northern City Roleplay is a fictional
+            ER:LC roleplay community. We strive to create an ER:LC community
+            that emphasizes fairness, liberty, and opportunities for all."
+    />
     <title>Northern City Roleplay</title>
-
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #f2f3f5;
-        color: #20242a;
-      }
-
-      main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        padding: 1rem;
-        box-sizing: border-box;
-        text-align: center;
-      }
-
-      img {
-        width: 6rem;
-        margin-bottom: 1.5rem;
-      }
-
-      h4 {
-        color: #69717c;
-        letter-spacing: 0.15rem;
-        margin-bottom: 0.5rem;
-      }
-
-      h1 {
-        font-size: 3rem;
-        margin: 0;
-      }
-
-      p {
-        color: #69717c;
-        max-width: 28rem;
-        line-height: 1.5;
-      }
-
-      a {
-        display: inline-block;
-        margin-top: 1.5rem;
-        padding: 0.9rem 1.5rem;
-        background-color: #323b46;
-        color: white;
-        text-decoration: none;
-        font-size: 0.85rem;
-        font-weight: bold;
-      }
-
-      a:hover {
-        background-color: #20242a;
-      }
-
-      .developer-credit {
-        margin-top: 3rem;
-        font-size: 0.75rem;
-        color: #69717c;
-      }
-
-      .developer-credit strong {
-        color: #323b46;
-      }
-    </style>
+    <link rel="stylesheet" href="/ncrp/assets/css/style.css" />
+    <script src="/ncrp/assets/js/navigation.js" defer></script>
   </head>
-
   <body>
-    <main>
-      <img src="/ncrp/assets/images/logo.webp" alt="NCRP Logo" />
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="Northern City Roleplay home">
+          <img
+            src="/ncrp/assets/images/logo.webp"
+            alt="Northern City Roleplay logo"
+          />
+          <span
+            ><strong>Northern City Roleplay</strong
+            ><small>Corasin Studios</small></span
+          >
+        </a>
+        <nav aria-label="Main navigation">
+          <a href="#about">About</a>
+          <div class="nav-dropdown">
+            <button
+              class="nav-dropdown-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="department-links"
+            >
+              Departments
+            </button>
+            <ul class="nav-dropdown-menu" id="department-links" hidden>
+              <li>
+                <a href="/ncpd/">
+                  <img src="/ncrp/assets/images/NCPD.webp" alt="" width="32" height="32" />
+                  <span>Northern City Police Department</span>
+                </a>
+              </li>
+              <li>
+                <a href="/ccso/">
+                  <img src="/ncrp/assets/images/CCSO.webp" alt="" width="32" height="32" />
+                  <span>Caledonia County Sheriff's Office</span>
+                </a>
+              </li>
+              <li>
+                <a href="/ccfd/">
+                  <img src="/ncrp/assets/images/CCFD.webp" alt="" width="32" height="32" />
+                  <span>Caledonia County Fire Rescue</span>
+                </a>
+              </li>
+              <li>
+                <a href="/ccdc/">
+                  <img src="/ncrp/assets/images/CCDC.webp" alt="" width="32" height="32" />
+                  <span>Caledonia County Dispatch Center</span>
+                </a>
+              </li>
+              <li>
+                <a href="/cdot/">
+                  <img src="/ncrp/assets/images/CDOT.webp" alt="" width="32" height="32" />
+                  <span>CalDOT</span>
+                </a>
+              </li>
+              <li>
+                <a href="/cmg/">
+                  <img src="/ncrp/assets/images/CMG.webp" alt="" width="32" height="32" />
+                  <span>Caledonia Media Group</span>
+                </a>
+              </li>
+              <li>
+                <a href="/civops/">
+                  <img src="/ncrp/assets/images/CivOps.webp" alt="" width="32" height="32" />
+                  <span>Civilian Operations</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a href="#faq">FAQ</a>
+          <a
+            class="nav-button"
+            href="https://www.roblox.com/communities/35353538/Northern-City-Roleplay-ERLC#!/about"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Roblox Group</a
+          >
+        </nav>
+      </div>
+    </header>
 
-      <h4>NORTHERN CITY ROLEPLAY</h4>
-      <h1>Coming Soon.</h1>
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-content">
+          <h1>Northern City<br />Roleplay</h1>
+          <p>
+            Presented by Corasin Studios, Northern City Roleplay is a fictional
+            ER:LC roleplay community. We strive to create an ER:LC community
+            that emphasizes fairness, liberty, and opportunities for all.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="button button-primary"
+              href="https://www.roblox.com/communities/35353538/Northern-City-Roleplay-ERLC#!/about"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Join Our Roblox Group</a
+            >
+            <a
+              class="button button-outline"
+              target="_blank"
+              href="https://discord.gg/GmyWphjC3q"
+              >Join Our Discord Server</a
+            >
+          </div>
+          <p class="server-code">Server code: <strong>northernRP</strong></p>
+        </div>
+      </section>
 
-      <p>
-        This section of the Northern City Roleplay website is currently under
-        development. Please check back soon for updates.
-      </p>
+      <section class="section" id="about">
+        <div class="container about-grid">
+          <img
+            class="community-image"
+            src="/ncrp/assets/images/community.webp"
+            alt="Northern City Roleplay character standing in front of a blue sports car"
+            width="1893"
+            height="995"
+            loading="lazy"
+          />
+          <div>
+            <p class="section-kicker">The Community</p>
+            <h2>Welcome to Northern City Roleplay</h2>
+            <p>
+              Northern City Rolepley (NCRP), is a ER:LC based roleplay
+              community. NCRP has been operating since 2024, and is presented by
+              Corasin Studios.
+            </p>
+            <p>
+              Whether you're interested in law enforcement, emergency services,
+              dispatch, or something else entirely - there is a place for you at
+              Northern City Roleplay.
+            </p>
+          </div>
+        </div>
+      </section>
 
-      <p class="developer-credit">
-        Website designed and developed by
-        <strong>Ach1evementUnl0cked</strong>
-      </p>
+      <section class="section section-alt" id="departments">
+        <div class="container">
+          <p class="section-kicker">Community Operations</p>
+          <h2>Our Departments</h2>
+          <p class="section-intro">Explore our communities departments.</p>
+          <div class="department-grid">
+            <article class="department-card">
+              <img
+                class="department-logo"
+                src="/ncrp/assets/images/NCPD.webp"
+                alt="Northern City Police Department badge"
+                width="56"
+                height="56"
+                loading="lazy"
+              />
+              <h3>Northern City Police Department</h3>
+              <p>
+                The Northern City Police Department continues to earn the trust
+                of the local community. They are committed to maintaining the
+                safety of residents, even in the more densely populated sections
+                of Northern City.
+              </p>
+              <a
+                href="https://discord.gg/V4mwRaYDfe"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Join the NCPD! <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="department-card">
+              <img
+                class="department-logo"
+                src="/ncrp/assets/images/CCSO.webp"
+                alt="Caledonia County Sheriff's Office logo"
+                width="56"
+                height="56"
+                loading="lazy"
+              />
+              <h3>Caledonia County Sheriff's Office</h3>
+              <p>
+                The Caledonia County Sheriff's Office is committed to protecting
+                and serving the community with professionalism, integrity, and
+                accountability. Through proactive policing, community
+                engagement, and effective law enforcement practices, the agency
+                works to ensure public safety and uphold the law.
+              </p>
+              <a
+                href="https://discord.gg/PeAMRak9wu"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Join the CCSO! <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="department-card">
+              <img
+                class="department-logo"
+                src="/ncrp/assets/images/CCFD.webp"
+                alt="Caledonia County Fire Rescue logo"
+                width="56"
+                height="56"
+                loading="lazy"
+              />
+              <h3>Caledonia County Fire Rescue</h3>
+              <p>Description Coming Soon!</p>
+              <a
+                href="https://discord.gg/feX9hTq9nF"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Join the CCFR! <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="department-card">
+              <img
+                class="department-logo"
+                src="/ncrp/assets/images/CCDC.webp"
+                alt="Caledonia County Dispatch Center logo"
+                width="56"
+                height="56"
+                loading="lazy"
+              />
+              <h3>Caledonia County Dispatch Center</h3>
+              <p>
+                The Caledonia County Dispatch Center serves as the communication
+                backbone for all emergency services within Northern City
+                Roleplay. Our dispatchers are the first point of contact during
+                any crisis—coordinating responses for law enforcement, fire, and
+                medical units with accuracy and professionalism.
+              </p>
+              <a
+                href="https://discord.gg/MDFMPRn5s5"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Join the CCDC! <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="department-card department-card-coming-soon">
+              <img
+                class="department-logo"
+                src="/ncrp/assets/images/CDOT.webp"
+                alt="CalDOT logo"
+                width="56"
+                height="56"
+                loading="lazy"
+              />
+              <h3>CalDOT</h3>
+              <p>
+                The Caledonia County Department of Transportation is currently
+                in development, and is set to release shortly.
+              </p>
+              <span class="card-note">Coming soon</span>
+              <div class="coming-soon-tape" aria-hidden="true">
+                <span class="tape tape-rising"
+                  >Coming soon <span>•</span> Coming soon <span>•</span> Coming
+                  soon</span
+                >
+                <span class="tape tape-falling"
+                  >Coming soon <span>•</span> Coming soon <span>•</span> Coming
+                  soon</span
+                >
+              </div>
+            </article>
+            <article class="department-card">
+              <img
+                class="department-logo"
+                src="/ncrp/assets/images/CMG.webp"
+                alt="Caledonia Media Group logo"
+                width="56"
+                height="56"
+                loading="lazy"
+              />
+              <h3>Caledonia Media Group</h3>
+              <p>Description Coming Soon!</p>
+              <a
+                href="https://discord.gg/cNN66pWSWw"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Join CMG! <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="department-card">
+              <img
+                class="department-logo"
+                src="/ncrp/assets/images/CivOps.webp"
+                alt="Civilian Operations logo"
+                width="56"
+                height="56"
+                loading="lazy"
+              />
+              <h3>Civilian Operations</h3>
+              <p>
+                NCRP Civilian Operations provides administrative oversight for
+                all civilian activities including but not limited to factions,
+                businesses, priority roleplays, and more! At the Civilian
+                Operations department, our mission is to support and enhance
+                roleplaying experiences to the highest standard.
+              </p>
+              <a
+                href="https://discord.gg/GhRbzrsygb"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Join Civillian Operations! <span aria-hidden="true">↗</span></a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container faq-grid">
+          <div>
+            <p class="section-kicker">Helpful Information</p>
+            <h2>Frequently Asked Questions</h2>
+            <details>
+              <summary>How do I join a department?</summary>
+              <p>
+                Join the Department Discord via the links above. Most
+                departments require a tryout or department-specific process.
+              </p>
+            </details>
+            <details>
+              <summary>Can I join law enforcement without a rank?</summary>
+              <p>
+                Yes, subject to approved unranked vehicles and the required 3-4
+                digit numeric callsign format. Please review the Vehicle & Gun
+                Permissions for approved vehicles.
+              </p>
+            </details>
+            <details>
+              <summary>How do I become a certified civilian?</summary>
+              <p>
+                Join the Civilian Operations Discord via the link above and
+                complete the certification application.
+              </p>
+            </details>
+            <details>
+              <summary>How can I appeal a punishment?</summary>
+              <p>
+                Use the In-Game Warn/Kick Appeals resource in the community
+                Discord. For moderation history, please visit -
+                https://melonly.xyz/my/logs
+              </p>
+            </details>
+            <details>
+              <summary>Are staff transfers or fast passes offered?</summary>
+              <p>
+                No. All applicants must complete the normal application process,
+                including applicants from other communities. Departments may
+                allow transfers, this varies per department policy.
+              </p>
+            </details>
+            <details>
+              <summary>How is VIP status awarded?</summary>
+              <p>
+                NCRP Directors may grant VIP status to members who consistently
+                contribute through activity and quality roleplay.
+              </p>
+            </details>
+          </div>
+          <div class="faq-side">
+            <img
+              src="/ncrp/assets/images/community2.jpg"
+              alt="Northern City Roleplay frequently asked questions banner"
+            />
+            <p>
+              Need more assistance? Visit the community's
+              <a
+                target="_blank"
+                href="https://discord.com/channels/1362981387816140972/1373885191361269912"
+                >support channels</a
+              >
+              for questions about department access, permissions, or moderation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="resources">
+        <div class="container">
+          <p class="section-kicker">Important Resources</p>
+          <h2>Quick Links</h2>
+          <div class="resource-grid">
+            <a
+              href="https://www.roblox.com/communities/35353538/Northern-City-Roleplay-ERLC#!/about"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><strong>Roblox Group</strong
+              ><span>Visit the official community group ↗</span></a
+            >
+            <a
+              href="https://docs.google.com/spreadsheets/d/1lHvkZiNIMTOuVeabYo5Hg_LnLASBMrHCOM9-RYsbxC0/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><strong>Vehicle & Gun Permissions</strong
+              ><span>Review approved vehicles and items ↗</span></a
+            >
+            <a
+              href="https://melonly.xyz/my/logs"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><strong>Moderation Logs</strong
+              ><span>View your moderation records ↗</span></a
+            >
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <img src="/ncrp/assets/images/logo.webp" alt="" />
+          <div>
+            <strong>Northern City Roleplay</strong
+            ><small>Corasin Studios</small>
+          </div>
+        </div>
+        <p>
+          <small>
+            Established 2024 · Not affiliated with Roblox, Emergency Response:
+            Liberty County, or any Government Agency.
+          </small>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
