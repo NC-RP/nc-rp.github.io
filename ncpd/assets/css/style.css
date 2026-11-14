@@ -1,0 +1,1027 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #20242a;
+  background-color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  color: #69717c;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+}
+
+/* Navigation */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3%;
+  background-color: white;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand img {
+  width: 4rem;
+}
+
+.brand h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.brand p {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Hero Banner */
+header {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("/ncpd/assets/images/hero.png");
+  background-size: cover;
+  background-position: center 45%;
+  color: white;
+  padding: 4rem 6%;
+  min-height: 500px;
+  box-sizing: border-box;
+}
+
+.hero-content {
+  max-width: 32rem;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin: 1.5rem 0;
+  margin-bottom: 0.5rem;
+}
+
+header h4 {
+  font-size: 0.8rem;
+}
+
+header p {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
+
+.button {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.light {
+  color: #20242a;
+  background-color: white;
+}
+
+.dark {
+  color: white;
+  background-color: #323b46;
+}
+
+/* Chief Message */
+
+.chief-section {
+  display: flex;
+  gap: 4rem;
+  padding: 4rem 6%;
+  align-items: flex-start;
+}
+
+.chief-section img {
+  width: 20rem;
+  height: 19rem;
+  object-fit: cover;
+}
+
+.chief-message {
+  flex: 1;
+}
+
+.chief-message h5 {
+  color: #69717c;
+  font-size: 0.75rem;
+}
+
+.chief-message h2 {
+  font-size: 2rem;
+}
+
+.chief-message .button {
+  margin-top: 1rem;
+}
+
+/* News */
+
+.news-section {
+  background-color: #f2f3f5;
+  padding: 3rem 6%;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.section-heading h5 {
+  color: #69717c;
+  font-size: 0.75rem;
+}
+
+.section-heading h2 {
+  margin: 0;
+}
+
+.section-heading a {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.news-card {
+  background-color: white;
+}
+
+.news-card img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 1.25rem;
+}
+
+.news-content h5 {
+  font-size: 0.65rem;
+  color: #69717c;
+}
+
+.news-content h3 {
+  font-size: 1rem;
+}
+
+.news-content p {
+  font-size: 0.8rem;
+}
+
+/* Careers */
+
+.careers-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 6%;
+  padding: 1rem 2rem;
+  border-left: 0.3rem solid #323b46;
+}
+
+.careers-content h5 {
+  color: #69717c;
+  font-size: 0.75rem;
+}
+
+.careers-content h2 {
+  margin-bottom: 0.5rem;
+}
+
+.careers-content p {
+  margin: 0;
+}
+
+/* Footer */
+
+footer {
+  background-color: #323b46;
+  color: white;
+  padding: 4rem 6% 1rem;
+}
+
+footer p {
+  color: #d1d5db;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-content h2 {
+  margin: 0;
+}
+
+.footer-content h4 {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.footer-content a {
+  display: block;
+  font-size: 0.85rem;
+  color: #d1d5db;
+}
+
+.footer-content hr {
+  border: 0;
+  border-top: 1px solid #69717c;
+  width: 10rem;
+  margin-left: 0;
+}
+
+.footer-content small {
+  font-size: 0.65rem;
+  color: #d1d5db;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #69717c;
+  padding-top: 1rem;
+  font-size: 0.75rem;
+}
+
+.footer-bottom a {
+  margin-left: 1rem;
+}
+
+.disclaimer {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+/* Smaller Screens */
+
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .chief-section {
+    flex-direction: column;
+  }
+
+  .chief-section img {
+    max-width: 100%;
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .careers-section {
+    gap: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+}
+
+/* About */
+
+.mission-section {
+  padding: 4rem 15%;
+  text-align: center;
+  background-color: #f2f3f5;
+}
+
+.mission-section p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+
+.leadership-section {
+  padding: 4rem 6%;
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.leader-card {
+  background-color: #f2f3f5;
+}
+
+.leader-card img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.leader-content {
+  padding: 1.5rem;
+}
+
+.leader-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.leader-content p {
+  font-size: 0.75rem;
+  margin: 0;
+  color: #69717c;
+}
+
+.divisions-section {
+  background-color: #f2f3f5;
+  padding: 4rem 6%;
+}
+
+.divisions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.division-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2rem;
+}
+
+.division-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.division-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.division-card a {
+  margin-top: auto;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #323b46;
+}
+
+.division-card a:hover {
+  text-decoration: underline;
+}
+
+#div_line {
+  border: 0;
+  border-top: 1px solid #69717c;
+  width: 10rem;
+  margin-left: 0;
+}
+
+.division-header {
+  background-size: cover;
+  background-position: center 45%;
+  color: white;
+  padding: 4rem 6%;
+  height: 320px;
+  box-sizing: border-box;
+}
+
+.hero-content {
+  max-width: 32rem;
+}
+
+/* Division */
+
+.division-overview {
+  padding: 4rem 6%;
+}
+
+.division-overview div {
+  max-width: 55rem;
+}
+
+.division-overview h5 {
+  color: #69717c;
+  font-size: 0.75rem;
+}
+
+.division-overview h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.responsibilities-section {
+  padding: 4rem 6%;
+  background-color: #f2f3f5;
+}
+
+.responsibilities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.responsibility-card {
+  background-color: white;
+  padding: 2rem;
+}
+
+.responsibility-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.responsibility-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.division-command {
+  padding: 4rem 6%;
+}
+
+.lieutenant {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.lieutenant img {
+  width: 15rem;
+  height: 18rem;
+  object-fit: cover;
+}
+
+.lieutenant div {
+  flex: 1;
+}
+
+.lieutenant h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.lieutenant h5 {
+  color: #69717c;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.lieutenant p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* careers */
+
+.career-intro {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem 6%;
+}
+
+.career-intro div {
+  flex: 1;
+}
+
+.career-intro h5 {
+  color: #69717c;
+  font-size: 0.75rem;
+}
+
+.career-intro h2 {
+  font-size: 2rem;
+}
+
+.career-intro p {
+  line-height: 1.7;
+}
+
+.career-intro img {
+  width: 40%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.recruitment-section {
+  padding: 4rem 6%;
+}
+
+.recruitment-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.recruitment-grid article {
+  background-color: #f2f3f5;
+  padding: 1.5rem;
+}
+
+.recruitment-grid h3 {
+  font-size: 2rem;
+  color: #69717c;
+  margin-bottom: 1.5rem;
+}
+
+.recruitment-grid h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.recruitment-grid p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.requirements-section {
+  background-color: #f2f3f5;
+  padding: 4rem 6%;
+}
+
+.requirements-section div {
+  max-width: 55rem;
+}
+
+.requirements-section h5 {
+  color: #69717c;
+  font-size: 0.75rem;
+}
+
+.requirements-section h2 {
+  font-size: 2rem;
+}
+
+.requirements-section p {
+  line-height: 1.7;
+}
+
+.requirements-section ul {
+  padding-left: 1.5rem;
+  line-height: 2;
+}
+
+.apply-section {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("/ncpd/assets/images/ncpd-p3.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 6rem 6%;
+  text-align: center;
+}
+
+.apply-section h5 {
+  color: #d1d5db;
+  font-size: 0.75rem;
+}
+
+.apply-section h2 {
+  font-size: 2rem;
+}
+
+.apply-section p {
+  color: #d1d5db;
+  max-width: 35rem;
+  margin: 1rem auto 2rem;
+}
+
+/* News & Media */
+
+.featured-news {
+  padding: 4rem 6%;
+}
+
+.featured-article {
+  display: flex;
+  background-color: #f2f3f5;
+}
+
+.featured-article img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.featured-content {
+  flex: 1;
+  padding: 3rem;
+}
+
+.featured-content h5 {
+  color: #69717c;
+  font-size: 0.75rem;
+}
+
+.featured-content h2 {
+  font-size: 2rem;
+}
+
+.featured-content p {
+  line-height: 1.7;
+}
+
+.featured-content .button {
+  margin-top: 1rem;
+}
+
+.all-news-section {
+  background-color: #f2f3f5;
+  padding: 4rem 6%;
+}
+
+.all-news-section .news-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.all-news-section .news-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.news-date {
+  color: #69717c;
+  font-size: 0.75rem;
+}
+
+.news-content a {
+  margin-top: auto;
+  padding-top: 1rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #323b46;
+}
+
+.news-content a:hover {
+  text-decoration: underline;
+}
+
+.media-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 4rem 6%;
+}
+
+.media-section div {
+  max-width: 40rem;
+}
+
+.media-section h5 {
+  color: #69717c;
+  font-size: 0.75rem;
+}
+
+.media-section h2 {
+  font-size: 2rem;
+}
+
+.media-section p {
+  line-height: 1.7;
+}
+
+/* Transparency */
+
+.accountability-section {
+  padding: 4rem 6%;
+}
+
+.section-description {
+  max-width: 55rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.accountability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.accountability-grid article {
+  background-color: #f2f3f5;
+  padding: 2rem;
+}
+
+.accountability-grid h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.accountability-grid p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.transparency-section {
+  padding: 4rem 6%;
+  background-color: #f2f3f5;
+}
+
+.transparency-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.transparency-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2rem;
+}
+
+.transparency-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.transparency-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.transparency-card a {
+  margin-top: auto;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #323b46;
+}
+
+.transparency-card a:hover {
+  text-decoration: underline;
+}
+
+.transparency-faq {
+  padding: 4rem 6%;
+}
+
+.faq-list {
+  max-width: 60rem;
+}
+
+.faq-list details {
+  border-bottom: 1px solid #d1d5db;
+  padding: 1.5rem 0;
+}
+
+.faq-list details:first-child {
+  border-top: 1px solid #d1d5db;
+}
+
+.faq-list summary {
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.faq-list summary:hover {
+  color: #69717c;
+}
+
+.faq-list p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin: 1rem 0 0;
+}
+
+.transparency-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 4rem 6%;
+  background-color: #f2f3f5;
+}
+
+.transparency-contact div {
+  max-width: 40rem;
+}
+
+.transparency-contact h5 {
+  color: #69717c;
+  font-size: 0.75rem;
+}
+
+.transparency-contact h2 {
+  font-size: 2rem;
+}
+
+.transparency-contact p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* Privacy */
+
+.privacy-section {
+  padding: 4rem 6%;
+}
+
+.privacy-intro {
+  max-width: 55rem;
+  margin-bottom: 3rem;
+}
+
+.privacy-intro h5 {
+  color: #69717c;
+  font-size: 0.75rem;
+}
+
+.privacy-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.privacy-intro p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Policy Content */
+
+.privacy-content {
+  max-width: 55rem;
+}
+
+.privacy-content h3 {
+  font-size: 1.2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.privacy-content p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.privacy-content .button {
+  margin-top: 1.5rem;
+}
+
+/* Roster */
+
+/* Duty Roster: add after the main site stylesheet */
+.roster-page {
+  max-width: 180rem;
+  margin: 0 auto;
+  padding: 3rem 3% 5rem;
+}
+.roster-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+.roster-intro h2 {
+  margin-bottom: 0.5rem;
+}
+.roster-intro p {
+  margin: 0;
+}
+.roster-note {
+  color: #69717c;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+.roster-columns {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+.roster-column {
+  min-width: 0;
+}
+.column-heading {
+  background: #323b46;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  margin: 0 0 1rem;
+}
+.roster-group {
+  margin: 0 0 1.25rem;
+  border: 1px solid #d7dfe7;
+}
+.roster-group h3 {
+  margin: 0;
+  padding: 0.7rem 0.85rem;
+  background: #e7ebef;
+  color: #20242a;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+.roster-group table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.72rem;
+  text-align: left;
+}
+.roster-group th {
+  background: #f3f5f7;
+  color: #323b46;
+  font-size: 0.61rem;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  padding: 0.65rem 0.5rem;
+  border-bottom: 1px solid #cdd4dc;
+}
+.roster-group td {
+  padding: 0.65rem 0.5rem;
+  border-bottom: 1px solid #e2e6eb;
+  vertical-align: top;
+  white-space: nowrap;
+}
+.roster-group tbody tr:nth-child(even) {
+  background: #f8f9fb;
+}
+.roster-group tbody tr:last-child td {
+  border-bottom: 0;
+}
+.roster-group td:last-child {
+  white-space: normal;
+  min-width: 8rem;
+}
+.roster-group .vacant {
+  color: #7c8490;
+  font-style: italic;
+}
+.roster-footnote {
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
+}

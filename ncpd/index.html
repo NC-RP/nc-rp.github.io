@@ -3,93 +3,158 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Northern City Roleplay</title>
-
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #f2f3f5;
-        color: #20242a;
-      }
-
-      main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        padding: 1rem;
-        box-sizing: border-box;
-        text-align: center;
-      }
-
-      img {
-        width: 6rem;
-        margin-bottom: 1.5rem;
-      }
-
-      h4 {
-        color: #69717c;
-        letter-spacing: 0.15rem;
-        margin-bottom: 0.5rem;
-      }
-
-      h1 {
-        font-size: 3rem;
-        margin: 0;
-      }
-
-      p {
-        color: #69717c;
-        max-width: 28rem;
-        line-height: 1.5;
-      }
-
-      a {
-        display: inline-block;
-        margin-top: 1.5rem;
-        padding: 0.9rem 1.5rem;
-        background-color: #323b46;
-        color: white;
-        text-decoration: none;
-        font-size: 0.85rem;
-        font-weight: bold;
-      }
-
-      a:hover {
-        background-color: #20242a;
-      }
-
-      .developer-credit {
-        margin-top: 3rem;
-        font-size: 0.75rem;
-        color: #69717c;
-      }
-
-      .developer-credit strong {
-        color: #323b46;
-      }
-    </style>
+    <title>Northern City Police Department</title>
+    <link rel="stylesheet" href="/ncpd/assets/css/style.css" />
   </head>
-
   <body>
+    <nav>
+      <div class="brand">
+        <img src="/ncpd/assets/images/NCPD.png" alt="NCPD Logo" />
+        <div>
+          <h2>NORTHERN CITY</h2>
+          <p>POLICE DEPARTMENT</p>
+        </div>
+      </div>
+
+      <ul>
+        <li><a href="/ncpd/">HOME</a></li>
+        <li><a href="/ncpd/about">ABOUT</a></li>
+        <li><a href="/ncpd/careers">CAREERS</a></li>
+        <li><a href="/ncpd/news">NEWS</a></li>
+        <li><a href="/ncpd/transparency">TRANSPARENCY</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <div class="hero-content">
+        <h4>HONOR · INTEGRITY · SERVICE</h4>
+        <h1>Northern City<br />Police Department</h1>
+        <p>
+          Dedicated to public safety and law enforcement within Northern City.
+        </p>
+        <a href="/ncpd/about" class="button light">LEARN MORE</a>
+      </div>
+    </header>
+
     <main>
-      <img src="/ncrp/assets/images/NCPD.webp" alt="NCPD Logo" />
+      <!-- <section class="chief-section">
+        <img src="/ncpd/assets/images/erika.png" alt="Chief of Police" />
 
-      <h4>NORTHERN CITY POLICE DEPARTMENT</h4>
-      <h1>Coming Soon.</h1>
+        <div class="chief-message">
+          <h5>A MESSAGE FROM THE CHIEF OF POLICE</h5>
+          <h2>It's a me, Zai...</h2>
+          <p>
+            Well hello there, Zai... Guess what you have the honor of doing! You
+            get to write out a nice statement to the wonderful citizens of
+            Northern City. I will be judging you...
+          </p>
+          <p>Heavily... -_-</p>
+          <a href="/ncpd/transparency/roster/" class="button dark"
+            >DEPARTMENT ROSTER</a
+          >
+        </div>
+      </section> -->
 
-      <p>
-        This section of the Northern City Roleplay website is currently under
-        development. We are actively working on developing each departments
-        website, please check back later!
-      </p>
+      <section class="news-section">
+        <div class="section-heading">
+          <div>
+            <h5>DEPARTMENT UPDATES</h5>
+            <h2>Latest News & Announcements</h2>
+          </div>
+          <a href="/ncpd/news/">VIEW ALL NEWS →</a>
+        </div>
 
-      <p class="developer-credit">
-        Website designed and developed by
-        <strong>Ach1evementUnl0cked</strong>
-      </p>
+        <div class="news-grid">
+          <article class="news-card">
+            <img
+              src="/ncpd/assets/images/placeholder.png"
+              alt="Department news"
+            />
+            <div class="news-content">
+              <h5>SUBJECT</h5>
+              <h3>TITLE</h3>
+              <p>Brief Description</p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img
+              src="/ncpd/assets/images/placeholder.png"
+              alt="Department news"
+            />
+            <div class="news-content">
+              <h5>SUBJECT</h5>
+              <h3>TITLE</h3>
+              <p>Brief Description</p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img
+              src="/ncpd/assets/images/placeholder.png"
+              alt="Department news"
+            />
+            <div class="news-content">
+              <h5>SUBJECT</h5>
+              <h3>TITLE</h3>
+              <p>Brief Description</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="careers-section">
+        <div class="careers-content">
+          <h5>NCPD ACADEMY</h5>
+          <h2>CAREERS AT NCPD</h2>
+          <p>Learn more about our career opportunities and police academy.</p>
+        </div>
+        <a href="/ncpd/careers/" class="button dark">LEARN MORE</a>
+      </section>
     </main>
+
+    <footer>
+      <div class="footer-content">
+        <div>
+          <h2>NORTHERN CITY</h2>
+          <h4>POLICE DEPARTMENT</h4>
+          <p>HONOR · INTEGRITY · SERVICE</p>
+        </div>
+
+        <div>
+          <h4>RESOURCES</h4>
+          <a href="/ncpd/transparency/">FOIA Requests</a>
+          <a href="/ncrp/redirects/ncpd/handbook/">Department Handbook</a>
+          <a href="/ncrp/redirects/ncpd/database/">Department Database</a>
+          <hr />
+          <a href="/ncrp/redirects/ncpd/discord/">Department Discord</a>
+          <a href="/ncrp/redirects/ncpd/training_discord/">Training Server</a>
+        </div>
+
+        <div>
+          <h4>CONTACT</h4>
+          <a
+            target="_blank"
+            href="https://discord.com/channels/1364682893061787689/1479279676382908487"
+            >Department Help Desk</a
+          >
+          <hr />
+          <small>IN CASE OF EMERGENCY, DIAL 911</small>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Northern City Police Department • Corasin Studios</p>
+        <div>
+          <a href="/ncpd/policy/privacy/">Privacy</a>
+          <a href="/ncpd/policy/accessibility/">Accessibility</a>
+          <a href="/ncpd/policy/rtk/">Right To Know</a>
+        </div>
+      </div>
+      <p class="disclaimer">
+        Fictional Department. We are not affiliated with Roblox, ER:LC, or any
+        law enforcement agency.
+      </p>
+    </footer>
   </body>
 </html>
