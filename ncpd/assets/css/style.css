@@ -366,10 +366,12 @@ footer p {
 }
 
 .leader-card img {
+  display: block;
   width: 100%;
-  height: 20rem;
+  height: auto;
+  aspect-ratio: 11 / 10;
   object-fit: cover;
-  object-position: center top;
+  object-position: center;
 }
 
 .leader-content {
