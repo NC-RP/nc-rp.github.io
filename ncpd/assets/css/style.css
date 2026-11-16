@@ -1027,3 +1027,36 @@ footer p {
   font-size: 0.8rem;
   margin-top: 1.5rem;
 }
+
+/* FOIA */
+
+/* FOIA Requests */
+
+.foia-coming-soon {
+  padding: 4rem 6%;
+  background-color: #f2f3f5;
+  border-top: 1px solid #d1d5db;
+}
+
+.foia-coming-soon div {
+  max-width: 55rem;
+}
+
+.foia-coming-soon h5 {
+  color: #69717c;
+  font-size: 0.75rem;
+}
+
+.foia-coming-soon h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.foia-coming-soon p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.foia-coming-soon .button {
+  margin-top: 1.5rem;
+}
