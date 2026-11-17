@@ -84,8 +84,7 @@ header {
 
 header h1 {
   font-size: 2.8rem;
-  margin: 1.5rem 0;
-  margin-bottom: 0.5rem;
+  margin: 1.5rem 0 0.5rem;
 }
 
 header h4 {
@@ -184,6 +183,25 @@ header p {
 
 .news-card {
   background-color: white;
+}
+
+.news-card,
+.featured-article {
+  position: relative;
+}
+
+/* Make the whole news card clickable */
+.news-card-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.news-card:focus-within,
+.featured-article:focus-within {
+  outline: 3px solid #323b46;
+  outline-offset: 4px;
 }
 
 .news-card img {
@@ -445,10 +463,6 @@ footer p {
   box-sizing: border-box;
 }
 
-.hero-content {
-  max-width: 32rem;
-}
-
 /* Division */
 
 .division-overview {
@@ -532,7 +546,7 @@ footer p {
   line-height: 1.7;
 }
 
-/* careers */
+/* Careers */
 
 .career-intro {
   display: flex;
@@ -744,6 +758,119 @@ footer p {
   line-height: 1.7;
 }
 
+.article-page {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 3rem 6% 4rem;
+}
+
+.article-back {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #323b46;
+  font-weight: bold;
+}
+
+.article-back:hover {
+  text-decoration: underline;
+}
+
+.article-detail > img {
+  display: block;
+  width: 100%;
+  max-height: 32rem;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.article-content h5 {
+  color: #69717c;
+}
+
+.article-content h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: 0.5rem 0 1rem;
+  overflow-wrap: anywhere;
+}
+
+.article-content .news-date {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.article-content p {
+  line-height: 1.8;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.article-body {
+  margin-top: 2rem;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.article-body p {
+  margin: 1rem 0;
+  white-space: normal;
+}
+
+.article-body h1,
+.article-body h2,
+.article-body h3,
+.article-body h4,
+.article-body h5,
+.article-body h6 {
+  margin: 2rem 0 0.75rem;
+  line-height: 1.3;
+  color: #323b46;
+}
+
+.article-body ul,
+.article-body ol {
+  padding-left: 1.75rem;
+  margin: 1rem 0;
+}
+
+.article-body a {
+  color: #323b46;
+  text-decoration: underline;
+}
+
+.article-body blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1.25rem;
+  border-left: 4px solid #69717c;
+}
+
+.article-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.article-body pre,
+.article-body table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.article-body pre {
+  padding: 1rem;
+  background: #f2f3f5;
+}
+
+.article-body th,
+.article-body td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #69717c;
+}
+
+.article-body-plain {
+  white-space: pre-wrap;
+}
+
 /* Transparency */
 
 .accountability-section {
@@ -930,12 +1057,12 @@ footer p {
 
 /* Roster */
 
-/* Duty Roster: add after the main site stylesheet */
 .roster-page {
   max-width: 180rem;
   margin: 0 auto;
   padding: 3rem 3% 5rem;
 }
+
 .roster-intro {
   display: flex;
   justify-content: space-between;
@@ -943,26 +1070,32 @@ footer p {
   gap: 2rem;
   margin-bottom: 2.5rem;
 }
+
 .roster-intro h2 {
   margin-bottom: 0.5rem;
 }
+
 .roster-intro p {
   margin: 0;
 }
+
 .roster-note {
   color: #69717c;
   font-size: 0.75rem;
   white-space: nowrap;
 }
+
 .roster-columns {
   display: grid;
   grid-template-columns: 1fr 1.3fr 1fr;
   gap: 1.25rem;
   align-items: start;
 }
+
 .roster-column {
   min-width: 0;
 }
+
 .column-heading {
   background: #323b46;
   color: #fff;
@@ -972,10 +1105,12 @@ footer p {
   letter-spacing: 0.04em;
   margin: 0 0 1rem;
 }
+
 .roster-group {
   margin: 0 0 1.25rem;
   border: 1px solid #d7dfe7;
 }
+
 .roster-group h3 {
   margin: 0;
   padding: 0.7rem 0.85rem;
@@ -984,16 +1119,19 @@ footer p {
   font-size: 0.8rem;
   text-transform: uppercase;
 }
+
 .table-scroll {
   width: 100%;
   overflow-x: auto;
 }
+
 .roster-group table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.72rem;
   text-align: left;
 }
+
 .roster-group th {
   background: #f3f5f7;
   color: #323b46;
@@ -1003,32 +1141,36 @@ footer p {
   padding: 0.65rem 0.5rem;
   border-bottom: 1px solid #cdd4dc;
 }
+
 .roster-group td {
   padding: 0.65rem 0.5rem;
   border-bottom: 1px solid #e2e6eb;
   vertical-align: top;
   white-space: nowrap;
 }
+
 .roster-group tbody tr:nth-child(even) {
   background: #f8f9fb;
 }
+
 .roster-group tbody tr:last-child td {
   border-bottom: 0;
 }
+
 .roster-group td:last-child {
   white-space: normal;
   min-width: 8rem;
 }
+
 .roster-group .vacant {
   color: #7c8490;
   font-style: italic;
 }
+
 .roster-footnote {
   font-size: 0.8rem;
   margin-top: 1.5rem;
 }
-
-/* FOIA */
 
 /* FOIA Requests */
 

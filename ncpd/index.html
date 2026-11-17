@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Northern City Police Department</title>
     <link rel="stylesheet" href="/ncpd/assets/css/style.css" />
+    <script src="/ncpd/assets/js/news.js" defer></script>
   </head>
   <body>
     <nav>
@@ -62,42 +63,8 @@
           <a href="/ncpd/news/">VIEW ALL NEWS →</a>
         </div>
 
-        <div class="news-grid">
-          <article class="news-card">
-            <img
-              src="/ncpd/assets/images/placeholder.png"
-              alt="Department news"
-            />
-            <div class="news-content">
-              <h5>SUBJECT</h5>
-              <h3>TITLE</h3>
-              <p>Brief Description</p>
-            </div>
-          </article>
-
-          <article class="news-card">
-            <img
-              src="/ncpd/assets/images/placeholder.png"
-              alt="Department news"
-            />
-            <div class="news-content">
-              <h5>SUBJECT</h5>
-              <h3>TITLE</h3>
-              <p>Brief Description</p>
-            </div>
-          </article>
-
-          <article class="news-card">
-            <img
-              src="/ncpd/assets/images/placeholder.png"
-              alt="Department news"
-            />
-            <div class="news-content">
-              <h5>SUBJECT</h5>
-              <h3>TITLE</h3>
-              <p>Brief Description</p>
-            </div>
-          </article>
+        <div class="news-grid" data-news="recent" aria-live="polite">
+          <p>Loading news...</p>
         </div>
       </section>
 

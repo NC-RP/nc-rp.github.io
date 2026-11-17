@@ -1,0 +1,153 @@
+@page {
+  margin: 0.65in;
+}
+
+body {
+  margin: 0;
+  background: white;
+  color: black;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 11pt;
+  line-height: 1.5;
+}
+
+/* Hide everything that shouldn't be printed */
+body > :not(main),
+.article-back,
+.article-detail > img,
+noscript {
+  display: none !important;
+}
+
+.article-page {
+  display: flow-root;
+  width: auto;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Department heading */
+.article-page::before {
+  content: "NORTHERN CITY POLICE DEPARTMENT / NEWS & MEDIA";
+  display: block;
+  margin-bottom: 18pt;
+  padding-bottom: 8pt;
+  border-bottom: 1pt solid black;
+  font:
+    bold 9pt Arial,
+    sans-serif;
+  letter-spacing: 0.5pt;
+}
+
+.article-content,
+.article-body {
+  margin: 0;
+  padding: 0;
+}
+
+.article-content h1 {
+  margin: 0 0 10pt;
+  font-size: 24pt;
+  line-height: 1.15;
+}
+
+.article-content > h5,
+.article-content .news-date {
+  margin: 0 0 8pt;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+}
+
+.article-content .news-date {
+  margin-bottom: 18pt;
+}
+
+.article-content p,
+.article-body {
+  color: black;
+  line-height: 1.5;
+}
+
+/* Article text */
+.article-body p {
+  margin: 0 0 10pt;
+}
+
+.article-body h1,
+.article-body h2,
+.article-body h3,
+.article-body h4,
+.article-body h5,
+.article-body h6 {
+  margin: 16pt 0 7pt;
+  color: black;
+  line-height: 1.25;
+}
+
+.article-body h1 {
+  font-size: 20pt;
+}
+
+.article-body h2 {
+  font-size: 16pt;
+}
+
+.article-body h3 {
+  font-size: 13pt;
+}
+
+.article-body h4,
+.article-body h5,
+.article-body h6 {
+  font-size: 11pt;
+}
+
+.article-body blockquote {
+  margin: 12pt 0;
+  padding-left: 12pt;
+  border-left: 2pt solid #777;
+}
+
+.article-body img {
+  max-width: 100%;
+  max-height: 7in;
+  object-fit: contain;
+}
+
+.article-body a {
+  color: black;
+  text-decoration: underline;
+}
+
+/* Code blocks */
+.article-body pre {
+  padding: 8pt;
+  background: none;
+  border: 0.5pt solid #aaa;
+  font-size: 9pt;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  overflow: visible;
+}
+
+/* Tables */
+.article-body table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  overflow: visible;
+  table-layout: fixed;
+  font-size: 9pt;
+}
+
+.article-body thead {
+  display: table-header-group;
+}
+
+.article-body th,
+.article-body td {
+  padding: 5pt;
+  border-color: #777;
+}
